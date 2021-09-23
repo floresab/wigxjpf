@@ -1,7 +1,11 @@
 # Prerequisites
 *.d
 
+# Generated Header files
+/gen/*
+
 # Compiled Object files
+/obj/*
 *.slo
 *.lo
 *.o
@@ -27,6 +31,7 @@
 *.lib
 
 # Executables
+/bin/*
 *.exe
 *.out
 *.app
