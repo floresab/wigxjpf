@@ -10,7 +10,7 @@ if(NOT DEFINED WIGXJPF_MASTER_PROJECT)
   endif()
 endif()
 
-project(wigxjpf C CXX Fortran)
+project(wigxjpf C CXX Fortran VERSION 1.11)
 
 if(WIGXJPF_MASTER_PROJECT AND NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
