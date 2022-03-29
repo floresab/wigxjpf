@@ -202,6 +202,7 @@ set_target_properties(fpsimplexj PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
 target_include_directories(
   wigxjpf
   PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/inc>
+         $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/mod>
          $<INSTALL_INTERFACE:include/wigxjpf>
   PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/cfg ${PROJECT_BINARY_DIR}/gen
 )
