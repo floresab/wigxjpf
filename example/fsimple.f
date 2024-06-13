@@ -21,7 +21,7 @@ C
 C     Compile with: gfortran fsimple.f -o fsimple -L../lib/ -lwigxjpf
 
       program fsimple
-
+      use, intrinsic :: iso_fortran_env, only: spi=>int32, dpf=>real64
 C     Module with function interface declarations.
       use fwigxjpf
       
@@ -32,7 +32,7 @@ C     the module fwigxjpf)
 C     real*8 fwig3jj, fwig6jj, fwig9jj
 
 C     Local variables
-      real*8 val3j, val6j, val9j
+      real(dpf) val3j, val6j, val9j
 
       write (*,"(A)") "WIGXJPF fortran test program"
 
